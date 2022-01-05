@@ -161,6 +161,7 @@ ws-icon-0 = 1;
 ws-icon-1 = 2; 
 ws-icon-2 = 3; 
 ws-icon-3 = 4;
+ws-icon-4 = 5;
 
 label-mode-padding = 2
 label-mode-foreground = #000
@@ -301,7 +302,7 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-#label-volume =  %percentage%%
+#label-volume =  %percentage%
 label-volume =  
 label-volume-foreground = ${root.foreground}
 
@@ -332,7 +333,7 @@ format-volume = <label-volume> <bar-volume>
 label-volume = 
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = ""
+format-muted-prefix = 
 format-muted-foreground = ${colors.foreground-alt}
 #label-muted = sound muted
 

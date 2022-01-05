@@ -361,6 +361,8 @@ for_window [class="firefox"] move to workspace $ws2
 for_window [class="spotify"] move to workspace $ws3
 #set $ws4 "4: spotify" ver assign programs to workspaces
 for_window [class="google-chrome"] move to workspace $ws4
+#set $ws4 "4: spotify" ver assign programs to workspaces
+for_window [class="TelegramDesktop"] move to workspace $ws5
 
 # Window compositor
 #exec_always picom -f
