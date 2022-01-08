@@ -67,7 +67,8 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 1.0
+  opacity: 0.4
+  background_opacity: 0.5
   #opacity: 0.3
 
   # Startup Mode (changes require restart)
@@ -119,10 +120,12 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     #family: monospace
-    family: monospace
+    #family: 3270Narrow Nerd Font
+    family: FuraCode Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
+    #style: Mono 
 
   # Bold font face
   bold:
@@ -158,7 +161,7 @@ font:
     style: Bold Italic
 
   # Point size
-  #size: 11.0
+  size: 13.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -170,9 +173,9 @@ font:
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
   # right, increasing `y` moves the glyph upward.
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
+  glyph_offset:
+    x: 0
+    y: 0
 
   # Thin stroke font rendering (macOS only)
   #
@@ -206,9 +209,9 @@ colors:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
 
   # Vi mode cursor colors
   #
@@ -263,6 +266,7 @@ colors:
   # By default, these will use the opposing primary color.
   line_indicator:
     foreground: None
+    #foreground: '#ffffff' 
     background: None
 
   # Selection colors
@@ -404,7 +408,7 @@ cursor:
   # the style of the active value of the normal cursor.
   #
   # See `cursor.style` for available options.
-  vi_mode_style: None
+  vi_mode_style: None 
 
   # Cursor blinking interval in milliseconds.
   blink_interval: 750
