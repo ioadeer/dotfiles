@@ -117,10 +117,11 @@ vim.api.nvim_set_keymap('n', '<Leader>fg', '<cmd>Telescope live_grep<CR>', {nore
 vim.api.nvim_set_keymap('n', '<Leader>fb', '<cmd>Telescope buffers<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<Leader>fh', '<cmd>Telescope help_tags<CR>', {noremap = true})
 
--- require '~/.config/nvim/lsp/lsp-keybindings'
+-- require '.config/nvim/lsp/lsp-keybindings'
 -- require '~/.config/nvim/lsp/server-confs'
 -- config language servers
 -- agregar mas css, json, markdown, c++? , rust?
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.solidity_ls.setup{}
+--require'lspconfig'.solc.setup{}

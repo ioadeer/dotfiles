@@ -361,6 +361,7 @@ bindsym $mod+x exec .config/scripts/lock
 #set $ws2 "2: firefox" ver assign programs to workspaces
 for_window [class="firefox"] move to workspace $ws3 # output 2
 for_window [class="google-chrome"] move to workspace $ws4 # output 2
+for_window [class="Google Chrome"] move to workspace $ws4 # output 2
 for_window [class="TelegramDesktop"] move to workspace $ws9
 for_window [class="spotify"] move to workspace $ws10
 
