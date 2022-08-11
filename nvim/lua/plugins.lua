@@ -43,6 +43,12 @@ use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+use {
+  'davidgranstrom/scnvim',
+  config = function()
+    require('scnvim').setup()
+  end
+}
   -- Simple plugins can be specified as strings
   -- use '9mm/vim-closer'
 
