@@ -160,12 +160,10 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Gaps config
 # default gaps
-#gaps inner 15
-#gaps outer 5
-for_window [class="^.*"] border pixel 2 
+default_border pixel 1
+default_floating_border pixel 1
 gaps inner 15
 gaps outer 5
-#gaps inner right 5
 
 #workspace <ws> gaps [inner|outer|horizontal|vertical|top|left|bottom|right] <px>
 #gaps innet 5 workspace number $ws1
