@@ -27,6 +27,7 @@ return require('packer').startup(function()
      })
   -- language server protocol
   use 'neovim/nvim-lspconfig' 
+  use 'neoclide/coc.nvim'
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
@@ -49,6 +50,8 @@ use {
     require('scnvim').setup()
   end
 }
+
+
   -- Simple plugins can be specified as strings
   -- use '9mm/vim-closer'
 
