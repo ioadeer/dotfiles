@@ -44,12 +44,7 @@ use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
-use {
-  'davidgranstrom/scnvim',
-  config = function()
-    require('scnvim').setup()
-  end
-}
+use{'davidgranstrom/scnvim'}
 
 
   -- Simple plugins can be specified as strings
