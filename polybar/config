@@ -74,7 +74,7 @@ font-6 = Material Icons:style = Regular:pixelsize=12;2
 modules-left = i3
 #modules-center = mpd
 modules-center = xwindow
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem xbacklight alsa pulseaudio date xkeyboard memory cpu wlan eth battery temperature powermenu
 
 separator = |
 
