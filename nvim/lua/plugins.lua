@@ -27,7 +27,8 @@ return require('packer').startup(function()
      })
   -- language server protocol
   use 'neovim/nvim-lspconfig' 
-  use 'neoclide/coc.nvim'
+  -- use 'neoclide/coc.nvim'
+  use {'neoclide/coc.nvim', branch = 'master', run = 'npm ci'}
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
