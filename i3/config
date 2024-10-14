@@ -358,6 +358,7 @@ bindsym $mod+x exec .config/scripts/lock
 #exprop en terminal y hacer click en aplicacion para ver class
 #set $ws2 "2: firefox" ver assign programs to workspaces
 for_window [class="firefox"] move to workspace $ws3 # output 2
+for_window [class="Thunar"] move to workspace $ws3 # output 2
 for_window [class="Google-chrome"] move to workspace $ws4 # output 2
 for_window [class="obsidian"] move to workspace $ws5 # output 1
 for_window [class="Zotero"] move to workspace $ws6 # output 1
