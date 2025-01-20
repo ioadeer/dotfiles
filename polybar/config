@@ -67,7 +67,7 @@ font-2 = Font Awesome 6 Free:pixelsize=12;2
 font-3 = Font Awesome 6 Free Solid:pixelsize=12;2
 font-4 = Font Awesome 6 Brands:pixelsize=12;2
 font-5 = Siji:pixelsize=10;1
-font-6 = Material Icons:style = Regular:pixelsize=12;2
+font-6 = Material Icons:pixelsize=12;2
 #font-7 = Arimo Nerd Font:style = Regular:pixelsize=12;2
 
 #modules-left = bspwm i3

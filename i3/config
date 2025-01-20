@@ -366,6 +366,10 @@ for_window [class="discord"] move to workspace $ws8
 for_window [class="TelegramDesktop"] move to workspace $ws9
 for_window [class="spotify"] move to workspace $ws10
 
+# para dialogos
+#floating_minimum_size 75 x 50
+#
+#floating_maximum_size 400 x 300
 # Window compositor
 #exec_always picom -f
 exec_always picom -f --config $HOME/.config/picom/picom.conf
