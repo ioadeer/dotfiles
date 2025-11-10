@@ -2,17 +2,17 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+--vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
-  -- Packer can manage itself
+----  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
---  use {
+  use {
 --    'nvim-lualine/lualine.nvim',
---    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
---    }
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 --
-  use 'ryanoasis/vim-devicons'
+   use 'ryanoasis/vim-devicons'
 
    use({
        "NTBBloodbath/galaxyline.nvim",
@@ -32,7 +32,7 @@ return require('packer').startup(function()
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    'kyazdani42/nvim-web-devicons', -- optional, for file icon
     },
     config = function() require'nvim-tree'.setup {} end
 }

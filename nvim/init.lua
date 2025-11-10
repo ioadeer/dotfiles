@@ -11,7 +11,7 @@
 --vim.api.nvim_command 'filetype plugin indent on'
 
 --require 'dump'
-require 'plugins'
+--require 'plugins'
 
 -- vim.api.nvim_command 'runtime init/config.vim'
 -- vim.cmd 'source ~/.config/nvim/
@@ -19,6 +19,9 @@ require 'plugins'
 vim.api.nvim_command 'runtime init/nvim-tree-config.vim'
 
 require("nvim-tree").setup()
+
+require("config.lazy")
+require("config.keymaps")
     
 vim.cmd [[
 set autoindent
@@ -64,44 +67,44 @@ vim.api.nvim_set_keymap('n', '<Leader>fh', '<cmd>Telescope help_tags<CR>', {nore
 -- require '~/.config/nvim/lsp/server-confs'
 -- config language servers
 -- agregar mas css, json, markdown, c++? , rust?
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.solidity_ls.setup{}
-require'lspconfig'.clangd.setup{}
+--require'lspconfig'.pyright.setup{}
+--require'lspconfig'.ts_ls.setup{}
+--require'lspconfig'.solidity_ls.setup{}
+--require'lspconfig'.clangd.setup{}
 --require'lspconfig'.solc.setup{}
 --
 --nvim super collider
-local scnvim = require 'scnvim'
-local map = scnvim.map
-local map_expr = scnvim.map_expr
-scnvim.setup {
-  keymaps = {
-    ['<M-e>'] = map('editor.send_line', {'i', 'n'}),
-    ['<C-e>'] = {
-      map('editor.send_block', {'i', 'n'}),
-      map('editor.send_selection', 'x'),
-    },
-    ['<CR>'] = map('postwin.toggle'),
-    ['<M-CR>'] = map('postwin.toggle', 'i'),
-    ['<M-L>'] = map('postwin.clear', {'n', 'i'}),
-    ['<C-k>'] = map('signature.show', {'n', 'i'}),
-    ['<F12>'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
-    ['<leader>st'] = map('sclang.start'),
-    ['<leader>sk'] = map('sclang.recompile'),
-    ['<F1>'] = map_expr('s.boot'),
-    ['<F2>'] = map_expr('s.meter'),
-  },
-  editor = {
-    highlight = {
-      color = 'IncSearch',
-    },
-  },
-  postwin = {
-    float = {
-      enabled = true,
-    },
-  },
-}
+--local scnvim = require 'scnvim'
+--local map = scnvim.map
+--local map_expr = scnvim.map_expr
+--scnvim.setup {
+--  keymaps = {
+--    ['<M-e>'] = map('editor.send_line', {'i', 'n'}),
+--    ['<C-e>'] = {
+--      map('editor.send_block', {'i', 'n'}),
+--      map('editor.send_selection', 'x'),
+--    },
+--    ['<CR>'] = map('postwin.toggle'),
+--    ['<M-CR>'] = map('postwin.toggle', 'i'),
+--    ['<M-L>'] = map('postwin.clear', {'n', 'i'}),
+--    ['<C-k>'] = map('signature.show', {'n', 'i'}),
+--    ['<F12>'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
+--    ['<leader>st'] = map('sclang.start'),
+--    ['<leader>sk'] = map('sclang.recompile'),
+--    ['<F1>'] = map_expr('s.boot'),
+--    ['<F2>'] = map_expr('s.meter'),
+--  },
+--  editor = {
+--    highlight = {
+--      color = 'IncSearch',
+--    },
+--  },
+--  postwin = {
+--    float = {
+--      enabled = true,
+--    },
+--  },
+--}
 
 -- autocompletion with coc
 -- -- Some servers have issues with backup files, see #649
